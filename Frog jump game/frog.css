@@ -1,0 +1,125 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Press Start 2P",monospace
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+
+}
+
+button {
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background: #8965f6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    transition: 0.4s;
+    font-weight: 600;
+    border: black 2px solid;
+}
+
+button:hover {
+    background: #aef665;
+    color: #000;
+}
+
+
+.stone {
+    width: 80px;
+    height: 40px;
+    background-color: #bde0fe; /* Adjust color as needed */
+    border-radius: 50% 50% 0 0;
+    margin: 0 10px; /* Adjust margin as needed */
+    align-self: flex-end;
+}
+
+.container
+{
+    width: 70%;
+    height: 20%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: #6a5a73;
+    padding: 40px 60px;
+    /* opacity: 0.7; */
+    border-radius: 10px;
+}
+
+
+/* .frog {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    border-color: black;
+    transform: translateY(-200%) translateX(50%);
+    transition: 0.5s;
+} */
+
+img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(-200%) translateX(50%) scaleX(-1);
+    transition: 0.5s;
+}
+
+.red {
+    background-color: #e76f51;
+}
+.green {
+    background-color: #2a9d8f;
+}
+
+#win
+{
+    font-size: 3em;
+    box-sizing: border-box;
+
+}
+
+#bounce
+{
+    animation: bouncy 1s infinite;
+    display: inline-block;
+    position: relative;
+
+}
+
+@keyframes bouncy
+{
+    0%,40%,100%
+    {
+        transform: translateY(0);
+    }
+    20%
+    {
+        transform: translateY(-20px);
+    }
+   
+}

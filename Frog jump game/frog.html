@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/favicon/favicon-32x32.png" sizes="32x32" />
+    <title>Frog Jump</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press Start 2P">
+
+</head>
+<body>
+    <h1>Frog Jump</h1>
+    <div class="container">
+    <div class="stone" id="s1"><div class="frog red" onclick=jumpR(this)><img src="img/frog red.png" alt="red frog" ></div></div>
+    <div class="stone" id="s2"><div class="frog red" onclick=jumpR(this)><img src="img/frog red.png" alt="red frog" ></div></div>
+    <div class="stone" id="s3"><div class="frog red" onclick=jumpR(this)><img src="img/frog red.png" alt="red frog" ></div></div>
+    <div class="stone" id="s4"></div>
+    <div class="stone" id="s5"><div class="frog green" onclick=jumpL(this)><img src="img/frog green.png" alt="green frog" ></div></div>
+    <div class="stone" id="s6"><div class="frog green" onclick=jumpL(this)><img src="img/frog green.png" alt="green frog" ></div></div>
+    <div class="stone" id="s7"><div class="frog green" onclick=jumpL(this)><img src="img/frog green.png" alt="green frog" ></div></div>
+
+    </div>
+
+    <button type="button" onclick="window.location.reload()">RESET</button>
+    <h1 id="win"></h1>
+    <h1 id="bounce"></h1>
+
+
+</body>
+<link rel="stylesheet" href="frog.css">
+<script src="frog.js"></script>
+</html>
